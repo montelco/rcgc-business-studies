@@ -1,0 +1,11 @@
+.tp-banner-container{
+    @include wid-pos-pad();
+}
+
+.tp-banner{
+    @include wid-pos-pad();
+}
+
+.tp-banner-fullscreen-container {
+    @include wid-pos-pad();
+}

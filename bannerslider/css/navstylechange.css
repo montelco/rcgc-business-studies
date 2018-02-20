@@ -3,7 +3,7 @@
 /*******************************************************************************
 		-	BULLETS AND ARROWS ADD ONS TO THE EXISTING VERSION 	-
 *******************************************************************************/
-
+/*
 .tp-bannertimer {
     background:#777;
     background:rgba(0,0,0,0.1);
@@ -55,7 +55,7 @@
 }
 
 
-
+*/
 .tparrows:before {
     font-family: 'revicons';
 	color: #fff;
@@ -71,9 +71,7 @@
     font-size: 20px;
 }
 .tparrows {
-
     cursor: pointer;
-
     background: rgba(0, 0, 0, 0.5) !important;
     -webkit-border-radius: 5px;
     border-radius: 5px;
