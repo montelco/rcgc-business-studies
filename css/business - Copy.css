@@ -115,7 +115,7 @@ Bootstrap Custom Classes
 	width:90%;
 }
 
-/*
+
 .navbar-inverse {
 	color: #FFFCFC;
 	background-image: -webkit-linear-gradient(270deg,rgba(42,76,104,1.00) 0%,rgba(16,32,57,1.00) 100%);
@@ -123,7 +123,7 @@ Bootstrap Custom Classes
 	background-image: -o-linear-gradient(270deg,rgba(42,76,104,1.00) 0%,rgba(16,32,57,1.00) 100%);
 	background-image: linear-gradient(180deg,rgba(42,76,104,1.00) 0%,rgba(16,32,57,1.00) 100%);
 }
-*/
+
 a, a:visited {
     color: #337ab7;
     text-decoration: none;
@@ -277,26 +277,15 @@ jumbotron-body {
 	padding-bottom: 20px;
 }
 
-
-
-
-/*****************************
-
-Ribbon Custom Classes 
-
-*****************************/
-
 .ribbon {
 	font-size: 16px !important;
-	/* This ribbon is based on a 16px font side and a 24px vertical rhythm. I've used em's to position each element for scalability. If you want to use a different font size you may have to play with the position of the ribbon elements */
-
 	width: 50%;
 	position: relative;
 	background-color: #1c3358;
 	color: #fff;
 	text-align: center;
-	padding: 1em 2em; /* Adjust to suit */
-	margin: 2em auto 3em; /* Based on 24px vertical rhythm. 48px bottom margin - normally 24 but the ribbon 'graphics' take up 24px themselves so we double it. */
+	padding: 1em 2em;
+	margin: 2em auto 3em;
 }
 .ribbon:before, .ribbon:after {
 	content: "";
@@ -362,7 +351,6 @@ Slick Slider Custom Classes
     .slick-slide img {
       width: 100%;
     }
-
     .slick-prev:before,
     .slick-next:before {
         color: black !important;

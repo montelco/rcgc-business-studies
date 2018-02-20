@@ -7,7 +7,11 @@ darker, grey-darkest, etc */
 $harvest_gold: #DCA400;
 $tufts_blue: #337AB7;
 $eerie_black: #0B1626;
+$space_cadet: #1C3358;
 $middle_green: #4CAF50;
+$lavender_grey: #C7C7C7;
+$goldenrod: #daa520;
+
 
 /* DRY block for pretty links */ 
 
@@ -26,6 +30,9 @@ $middle_green: #4CAF50;
     position:relative;
     padding:0;
 }
+@mixin lin-grad($direction, $start, $end) {
+    background: linear-gradient($direction, $start, $end);
+}
 
 /* Import all styles from respective files */ 
 
@@ -35,3 +42,4 @@ $middle_green: #4CAF50;
 @import 'slick-theme';
 @import 'slider-caption';
 @import 'slider-container';
+@import 'footer';

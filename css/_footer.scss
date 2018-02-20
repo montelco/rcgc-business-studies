@@ -1,0 +1,38 @@
+footer{
+    color: white;
+    
+    .blend-gradient {
+        @include lin-grad(136deg, $eerie_black, $space_cadet);
+    }
+
+    .rcgc-footercontainer {
+        padding-top: 35px; 
+        padding-bottom: 45px;
+    }
+
+    .rcgc-footerlogoimg {
+        padding-bottom: 0px;
+    }
+
+    .rcgc-footerlogotext {
+        color: white; 
+        padding-left: 45px;
+    }
+
+    .rcgc-xssocialicon {
+        padding-left: 5px;
+    }
+
+    .rcgc-footerinfocol {
+        padding-top: 15px;
+    }
+
+    .rcgc-footertext {
+        color: white;
+    }
+
+    .rcgc-footerglyphicons {
+        color: $goldenrod;
+    }
+}
+    
