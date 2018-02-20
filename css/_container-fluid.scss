@@ -1,0 +1,18 @@
+.container-fluid{
+    .rcgc-formcontainer {
+        background-color:#cbdaef; 
+        border-top: #0b1626 solid 40px; 
+        border-left: #0b1626 solid 1px;
+        border-right: #0b1626 solid 1px; 
+        border-bottom: #0b1626 solid 1px; 
+        border-radius: 4px; 
+        padding-top: 10px;
+    }
+    .rcgc-btn {
+        width: 200px;
+        color: $white;
+        background-color: $dark_slate_grey;
+        border-color: $pastel_grey;
+        margin-bottom: 10px;
+    }
+}

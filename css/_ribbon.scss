@@ -1,0 +1,55 @@
+.ribbon {
+    font-size: 16px !important;
+    width: 50%;
+    position: relative;
+    background-color: $space_cadet;
+    color: $white;
+    text-align: center;
+    padding: 1em 2em;
+    margin: 2em auto 3em;
+
+    &:before {
+        left: -2em;
+        border-right-width: 1.5em;
+        border-left-color: transparent;
+        content: "";
+        position:absolute;
+        display: block;
+        bottom: -1em;
+        border: 1.5em solid #152947;
+        z-index: -1;
+    }
+    &:after {
+        content: "";
+        position:absolute;
+        display: block;
+        bottom: -1em;
+        border: 1.5em solid #152947;
+        z-index: -1;
+        right: -2em;
+        border-left-width: 1.5em;
+        border-right-color: transparent;
+    }
+    .ribbon-content{
+        &:before {
+            content: "";
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: $eerie_black transparent;
+            bottom: -1em;
+            left: 0;
+            border-width: 1em 0 0 1em;
+        }
+        &:after {
+            content: "";
+            position: absolute;
+            display: block;
+            border-style: solid;
+            border-color: $eerie_black transparent;
+            bottom: -1em;
+            right: 0;
+            border-width: 1em 1em 0 0;
+        }
+    }
+}

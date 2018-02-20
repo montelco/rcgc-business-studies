@@ -8,10 +8,13 @@ $harvest_gold: #DCA400;
 $tufts_blue: #337AB7;
 $eerie_black: #0B1626;
 $space_cadet: #1C3358;
+$maastricht_blue: #0F1C31;
 $middle_green: #4CAF50;
 $lavender_grey: #C7C7C7;
 $goldenrod: #daa520;
-
+$dark_slate_grey: #2A4C68;
+$white: #FFFFFF;
+$pastel_grey: #CCCCCC;
 
 /* DRY block for pretty links */ 
 
@@ -38,8 +41,12 @@ $goldenrod: #daa520;
 
 @import 'viewport-ie10';
 @import 'links';
+@import 'navbar-inverse';
 @import 'slick';
 @import 'slick-theme';
 @import 'slider-caption';
 @import 'slider-container';
+@import 'topcontainer';
+@import 'container-fluid';
+@import 'ribbon';
 @import 'footer';

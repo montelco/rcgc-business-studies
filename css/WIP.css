@@ -1,0 +1,127 @@
+
+a, a:visited {
+    color: #337ab7;
+    text-decoration: none;
+}
+
+img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-default {
+    color: #FFFFFF;
+    background-color: #1C3358;
+    width: 200px;
+}
+
+.btn-default:focus,
+.btn-default.focus {
+    color: #FFFFFF;
+    background-color: #1C3358;
+}
+
+.btn-default:hover {
+    color: #FFFFFF;
+    background-color: #2B4978;
+}
+
+.btn-default:active,
+.btn-default.active,
+.open > .dropdown-toggle.btn-default {
+    color: #FFFFFF;
+    background-color: #1C3358;
+}
+
+.btn-default:active:hover,
+.btn-default.active:hover,
+.open > .dropdown-toggle.btn-default:hover,
+.btn-default:active:focus,
+.btn-default.active:focus,
+.open > .dropdown-toggle.btn-default:focus,
+.btn-default:active.focus,
+.btn-default.active.focus,
+.open > .dropdown-toggle.btn-default.focus {
+    color: #FFFFFF;
+    background-color: #1C3358;
+}
+
+.glyphicon-earphone:before {
+  margin-right: 10px;
+}
+
+.glyphicon-info-sign:before {
+  margin-right: 10px;
+}
+
+.glyphicon-map-marker:before {
+  margin-right: 10px;
+}
+
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+}
+
+.img-responsive,
+.thumbnail > img,
+.thumbnail a > img,
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  padding: 0px;
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+    border-color: transparent;
+}
+
+.navbar-collapse {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+@media (max-width: 942px) {
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a {
+        color: white;
+    }
+    
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+        color: #fff;
+        background-color: #1C3358;
+    }
+    
+    .formcontainer {
+        padding-top: 15px;
+        padding-bottom: 15px;   
+}
+}
+
+@media (min-width: 943px) {
+    .dropdown-menu li:hover .sub-menu {
+      visibility: visible;
+    }
+    
+    .dropdown-menu li:focus .submenu {
+        visibility: hidden;
+    }
+
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    
+    .navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus {
+        background-color: transparent;
+}
+    .navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover {
+        background-color: lightgray;
+    }
+    
+    .formcontainer {
+    padding-top: 40px;
+    padding-bottom: 40px;   
+}
+}
+
+jumbotron-body {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
