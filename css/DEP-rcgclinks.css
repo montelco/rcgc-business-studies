@@ -9,7 +9,7 @@ a:visited {
 }
 
 a:hover {
-	color:#DCA400;
+	color:$harvest_gold;
 	text-decoration:none;
 }
 
@@ -19,17 +19,17 @@ a:active {
 }
 
 a.link {
-	color:#337ab7;
+	color:$tufts_blue;
 }
 
 a.button {
-	background-color:#0b1626;
+	background-color:$eerie_black;
 	color:white;
 	text-decoration:none;
 }
 
 a.button:hover{
-	background-color:#0b1626;
+	background-color:$eerie_black;
 	text-decoration:none;
 	padding:3px;
 	
@@ -56,22 +56,22 @@ a.business:active {
 }
 
 a.transferlinks {
-	color:#0b1626;
+	color:$eerie_black;
 	text-decoration:none;
 }
 
 a.transferlinks:visited {
-	color:#0b1626;
+	color:$eerie_black;
 	text-decoration:none;
 }
 
 a.transferlinks:hover{
-	color:#0b1626;
+	color:$eerie_black;
 	text-decoration:none;
 }
 
 a.transferlinks:active {
-	color:#0b1626;
+	color:$eerie_black;
 	text-decoration:none;
 }
 
@@ -98,7 +98,7 @@ a.dropdown:active{
 /* Fade Effect */
 
 .rcgcheaderbutton {
-    background-color: #4CAF50; /* Green */
+    background-color: $middle_green; /* Green */
     border: none;
     color: white;
     text-align: center;
@@ -110,7 +110,7 @@ a.dropdown:active{
 }
 
 .button5 {
-    background-color: #0b1626;
+    background-color: $eerie_black;
     color: black;
 }
 
@@ -120,4 +120,3 @@ a.dropdown:active{
 	text-decoration:none;
 	
 }
-
