@@ -1,0 +1,45 @@
+a {
+    &:link{@include constant-links(white);}
+    &:visited{@include constant-links(white);}
+    &:hover{@include constant-links($harvest_gold);}
+    &:active{@include constant-links(white);}
+    .link{color: $tufts_blue;}
+    .button{
+        @include constant-links(white);
+        background-color: $eerie_black;
+        &:hover{padding:3px;}
+    }
+    .business{
+        @include constant-states(white);
+
+    }
+    .transferlinks{
+        @include constant-states($eerie_black);
+    }
+    .dropdown{
+        @include constant-links(white);
+        &:visited{@include constant-links(white);}
+        &:hover{@include constant-links(black);}
+        &:active{@include constant-links(black);}
+    }
+}
+
+.rcgcheaderbutton {
+    @include constant-links(white);
+    background-color: $middle_green;
+    border: none;
+    text-align: center;
+    display: inline-block;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.button5 {
+    background-color: $eerie_black;
+    color: black;
+    &:hover{
+        @include constant-links(black);
+        background-color: white;
+    }
+}
