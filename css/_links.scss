@@ -13,7 +13,7 @@ a {
         @include constant-states(white);
 
     }
-    .transferlinks{
+    &.transferlinks{
         @include constant-states($eerie_black);
     }
     .dropdown{
@@ -21,6 +21,15 @@ a {
         &:visited{@include constant-links(white);}
         &:hover{@include constant-links(black);}
         &:active{@include constant-links(black);}
+    }
+    &.business{
+        @include constant-links(white);
+        &:visited{
+            @include constant-links(white);
+        }
+        &:active{
+            @include constant-links(white);
+        }
     }
 }
 

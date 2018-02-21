@@ -1,0 +1,55 @@
+img {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.btn-default {
+    @include text-n-bg($white, $space_cadet);
+    width: 200px;
+    &:focus {
+        @include text-n-bg($white, $space_cadet);
+    }
+    &.focus {
+        @include text-n-bg($white, $space_cadet);
+    }
+    &:hover {
+        @include text-n-bg($white, $st_patricks_blue);
+    }
+    &:active {
+        @include text-n-bg($white, $space_cadet);
+        &:hover {
+            @include text-n-bg($white, $space_cadet);
+        }
+        &:focus {
+            @include text-n-bg($white, $space_cadet);
+        }
+        &.focus {
+            @include text-n-bg($white, $space_cadet);
+        }
+    }
+    &.active {
+        @include text-n-bg($white, $space_cadet);
+        &:hover {
+            @include text-n-bg($white, $space_cadet);
+        }
+        &:focus {
+            @include text-n-bg($white, $space_cadet);
+        }
+        &.focus {
+            @include text-n-bg($white, $space_cadet);
+        }
+    }
+}
+
+.open > .dropdown-toggle.btn-default {
+    @include text-n-bg($white, $space_cadet);
+    &:hover {
+        @include text-n-bg($white, $space_cadet);
+    }
+    &:focus {
+        @include text-n-bg($white, $space_cadet);
+    }
+    &.focus {
+        @include text-n-bg($white, $space_cadet);
+    }
+}

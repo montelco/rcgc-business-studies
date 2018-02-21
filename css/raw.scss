@@ -15,12 +15,17 @@ $goldenrod: #daa520;
 $dark_slate_grey: #2A4C68;
 $white: #FFFFFF;
 $pastel_grey: #CCCCCC;
+$st_patricks_blue: #2B4978;
 
 /* DRY block for pretty links */ 
 
 @mixin constant-links($color) {
     color: $color;
     text-decoration: none;
+}
+@mixin text-n-bg($color, $bg) {
+    color: $color;
+    background-color: $bg;
 }
 @mixin constant-states($color) {
     @include constant-links($color);
@@ -47,6 +52,7 @@ $pastel_grey: #CCCCCC;
 @import 'slider-caption';
 @import 'slider-container';
 @import 'topcontainer';
+@import 'bootstrap-custom';
 @import 'container-fluid';
 @import 'ribbon';
 @import 'footer';

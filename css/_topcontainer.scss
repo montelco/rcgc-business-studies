@@ -1,32 +1,36 @@
 div {
-    .rcgc-topcontainer{
+    &.rcgc-topcontainer{
         padding-top: 0px;
         padding-bottom: 10px;
 
-        .non-semantic-protector { 
+        &.non-semantic-protector { 
           position: relative; z-index: 1; 
+        }
+        h4.rcgc-footertext{
+            color: $white;
         }
     }
     
-    .texture2 {
+    &.texture2 {
         background-color: $maastricht_blue;
     }
     
-    .texture {
+    &.texture {
         background-image: url("https://www.transparenttextures.com/patterns/white-wave.png");
     }
-    .rcgc-transfer {
+
+    &.rcgc-transfer {
         padding: 0px; 
         margin-top: -70px; 
         margin-bottom: -70px;
     }
-    .rcgc-graycontainer {
+    &.rcgc-graycontainer {
         background-color: lightgray;    
         padding-top: 0px;
         padding-bottom: 0px;
     }
 
-    .rcgc-whitecontainer {
+    &.rcgc-whitecontainer {
         background-color: white;
         padding-top: 0px;
         padding-bottom: 0px;
