@@ -8,7 +8,8 @@ nav + img.img-responsive {
 
 .btn-default {
     @include text-n-bg($white, $space_cadet);
-    width: 200px;
+    min-width: 185px;
+    max-width: 200px;
     &:focus {
         @include text-n-bg($white, $space_cadet);
     }
