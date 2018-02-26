@@ -1,7 +1,28 @@
-nav + img{
-    &#img-responsive {
+nav + div.gradcon{
+    margin-top: 108px;
+    padding: 0;
+    width: 100%;
+    position: relative;
+    &::after {
+        opacity: 0.475;
+        z-index: 10;
+        position: absolute;
+        content: "";
         width: 100%;
-        height: auto;
-        max-height: 700px;
+        height: 100%;
+        top: 0;
+        left: 0;
+        @include lin-grad($space_cadet,$tufts_blue);
+    }
+
+    img{
+        padding: 0;
+        filter: grayscale(65%);
+       &#img-responsive {
+            width: 100%;
+            height: auto;
+            max-height: 700px;
+            z-index: 0;
+        } 
     }
 }

@@ -2,7 +2,7 @@ footer{
     color: white;
     
     .blend-gradient {
-        @include lin-grad(136deg, $eerie_black, $space_cadet);
+        @include lin-grad($eerie_black, $space_cadet, 136deg);
     }
 
     .rcgc-footercontainer {

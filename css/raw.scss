@@ -38,8 +38,8 @@ $st_patricks_blue: #2B4978;
     position:relative;
     padding:0;
 }
-@mixin lin-grad($direction, $start, $end) {
-    background: linear-gradient($direction, $start, $end);
+@mixin lin-grad($start, $end, $direction:"") {
+    background: linear-gradient(unquote($direction, )$start, $end);
 }
 
 /* Import all styles from respective files */ 
