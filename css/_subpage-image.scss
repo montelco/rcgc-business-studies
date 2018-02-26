@@ -3,6 +3,7 @@ nav + div.gradcon{
     padding: 0;
     width: 100%;
     position: relative;
+    overflow: hidden;
     &::after {
         opacity: 0.475;
         z-index: 10;
@@ -17,7 +18,8 @@ nav + div.gradcon{
 
     img{
         padding: 0;
-        filter: grayscale(65%);
+        filter: /* blur(10px) */ grayscale(65%);
+        // transform: scale(1.15);
        &#img-responsive {
             width: 100%;
             height: auto;
