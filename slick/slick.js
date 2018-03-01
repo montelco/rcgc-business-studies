@@ -608,7 +608,7 @@
             respondToWidth = Math.min(windowWidth, sliderWidth);
         }
 		
-		console.log(respondToWidth);
+		// console.log(respondToWidth);
 		//console.log();
 	
         if ( _.options.responsive &&
