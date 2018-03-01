@@ -39,7 +39,7 @@ $st_patricks_blue: #2B4978;
     padding:0;
 }
 @mixin lin-grad($start, $end, $direction:"") {
-    background: linear-gradient(unquote($direction, )$start, $end);
+    background: linear-gradient(unquote($direction), $start, $end);
 }
 
 /* Import all styles from respective files */ 
@@ -55,6 +55,7 @@ $st_patricks_blue: #2B4978;
 @import 'slider-container';
 @import 'topcontainer';
 @import 'bootstrap-custom';
+@import 'program-info';
 @import 'container-fluid';
 @import 'ribbon';
 @import 'footer';

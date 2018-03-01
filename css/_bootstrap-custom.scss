@@ -2,9 +2,6 @@ img {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-nav + img.img-responsive {
-    padding-top: 108px;
-}
 
 .btn-default {
     @include text-n-bg($white, $space_cadet);
