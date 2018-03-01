@@ -6,43 +6,61 @@ section#header-img-container{
         padding-bottom: 0px;
         width: 100%;
     }
-    @media screen and (min-width: 768px){
+    @media screen and (min-width: 942px){
         display: flex;
         align-items: center;
     }
     aside {
-        @media screen and (min-width: 768px) {
-            background: rgba(250,250,250,0.8);
+        @media screen and (min-width: 942px) {
+            background: rgba(250,250,250,0.85);
             position: absolute;
             right: 0;
-            top: 108px;
-            max-width: 40vmax;
-            min-height: calc(50% - 108px);
-            max-height: calc(100% - 108px);
+            top: calc(108px + 25%);
+            bottom: 108px;
+            max-width: 25vmax;
+            min-height: 260px;
             padding: 2rem;
+            box-shadow: -0.25rem 0.25rem 0.75em rgba(0,0,0,0.16);
         }
-        @media screen and (max-width: 767px){
+        @media screen and (min-width: 1226px){
+            max-height: 325px;
+        }
+        @media screen and (min-width: 943px) and (max-width: 1366px){
+            top: 108px;
+            min-height: calc(100% - 108px);
+        }
+        @media screen and (max-width: 941px){
             padding: 15px;
         }
-        h2{
-            font-size: 2.75rem;
-            span{
-                color: rgba(35,35,35,1);
-                font-size: 1.75rem;
+        .inner-cont{
+            position: relative;
+            height: 100%;
+            h2{
+                font-size: 2.75rem;
+                span{
+                    color: rgba(35,35,35,1);
+                    font-size: 1.75rem;
+                }
+            }
+            article{
+                margin: 2rem 0rem;
+            }
+            div.centred {
+                @media screen and (min-width: 942px) {
+                    position: absolute;
+                    width: 100%;
+                    bottom: 2rem;
+                }
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                button#control-sheet{
+                    padding: 1.5rem;
+                    border: none;
+                    border-radius: 4px;
+                }
             }
         }
-        article{
-            margin: 2rem 0rem;
-        }
-        div.centred {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            button#control-sheet{
-                padding: 1.5rem;
-                border: none;
-                border-radius: 4px;
-            }
-        }
+        
     }
 }
