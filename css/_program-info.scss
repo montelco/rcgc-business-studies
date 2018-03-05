@@ -2,7 +2,7 @@ section#header-img-container{
     position: relative;
     overflow: hidden;
     img.img-responsive {
-        padding-top: 108px;
+        padding-top: 60px;
         padding-bottom: 0px;
         width: 100%;
     }
@@ -15,8 +15,8 @@ section#header-img-container{
             background: rgba(250,250,250,0.85);
             position: absolute;
             right: 0;
-            top: calc(108px + 25%);
-            bottom: 108px;
+            top: calc(60px + 25%);
+            bottom: 60px;
             max-width: 25vmax;
             min-height: 260px;
             padding: 2rem;
@@ -25,9 +25,9 @@ section#header-img-container{
         @media screen and (min-width: 1226px){
             max-height: 325px;
         }
-        @media screen and (min-width: 943px) and (max-width: 1366px){
-            top: 108px;
-            min-height: calc(100% - 108px);
+        @media screen and (min-width: 942px) and (max-width: 1366px){
+            top: 60px;
+            min-height: calc(100% - 60px);
         }
         @media screen and (max-width: 941px){
             padding: 15px;
@@ -37,13 +37,18 @@ section#header-img-container{
             height: 100%;
             h2{
                 font-size: 2.75rem;
+                font-weight: 700;
                 span{
                     color: rgba(35,35,35,1);
                     font-size: 1.75rem;
+                    font-weight: 400;
                 }
             }
             article{
                 margin: 2rem 0rem;
+                @media screen and (min-width: 1675px){
+                    font-size: 1.5em;
+                }
             }
             div.centred {
                 @media screen and (min-width: 942px) {
