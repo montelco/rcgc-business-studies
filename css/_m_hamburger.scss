@@ -1,0 +1,14 @@
+.rcgc-fixednavbody {
+    nav.navbar-fixed-top.navbar-inverse {
+        .container-fluid {
+            .navbar-header {
+                button{
+                    &.navbar-toggle {
+                        margin-right: 0px;
+                        margin-top: 12px;
+                    }
+                }
+            }
+        }
+    }
+}
