@@ -13,6 +13,7 @@
         white-space: nowrap;
         position: relative;
         border: none;
+        margin-top: 5px;
 
         &:hover, &:focus, &:active {
             .icon {
@@ -63,9 +64,8 @@
         }
         .icon{
             position: absolute;
-            top: 50%;
-            margin-left: 17px;
-            margin-top: 17px;
+            top: 33%;
+            padding-left: 17px;
             z-index: 1;
             color: #abb4c1;
         }
