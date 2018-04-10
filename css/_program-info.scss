@@ -1,8 +1,9 @@
 section#header-img-container{
     position: relative;
     overflow: hidden;
+    max-height: 400px;
+    max-height: 2000px;
     img.img-responsive {
-        padding-top: 60px;
         padding-bottom: 0px;
         width: 100%;
     }
@@ -15,7 +16,7 @@ section#header-img-container{
             background: rgba(250,250,250,0.85);
             position: absolute;
             right: 0;
-            top: calc(60px + 25%);
+            top: 25%;
             bottom: 60px;
             max-width: 25vmax;
             min-height: 260px;
@@ -26,8 +27,8 @@ section#header-img-container{
             max-height: 325px;
         }
         @media screen and (min-width: 942px) and (max-width: 1366px){
-            top: 60px;
-            min-height: calc(100% - 60px);
+            top: 0px;
+            min-height: 100%;
         }
         @media screen and (max-width: 941px){
             padding: 15px;
@@ -38,6 +39,7 @@ section#header-img-container{
             h2{
                 font-size: 2.75rem;
                 font-weight: 700;
+                color: initial;
                 span{
                     color: rgba(35,35,35,1);
                     font-size: 1.75rem;

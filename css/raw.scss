@@ -16,6 +16,7 @@ $dark_slate_grey: #2A4C68;
 $white: #FFFFFF;
 $pastel_grey: #CCCCCC;
 $st_patricks_blue: #2B4978;
+$fab-button: #1C3358;
 
 /* DRY block for pretty links */ 
 
@@ -46,6 +47,7 @@ $st_patricks_blue: #2B4978;
 @import 'global';
 @import 'viewport-ie10';
 @import 'links';
+@import 'fab';
 @import 'navbar-inverse';
 @import 'logo';
 @import 'm_hamburger';

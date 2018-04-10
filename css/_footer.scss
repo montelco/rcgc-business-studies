@@ -21,6 +21,14 @@ footer{
 
     .rcgc-xssocialicon {
         padding-left: 5px;
+        a {
+            img {
+                &.img-circle {
+                    padding-top: 10px;
+                    padding-bottom: 10px;
+                }
+            }
+        }
     }
 
     .rcgc-footerinfocol {
