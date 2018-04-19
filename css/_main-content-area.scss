@@ -1,0 +1,10 @@
+.main-content-area {
+    float: left;
+    position: relative;
+    .main-content {
+        @media screen and (min-width: 415px) {
+            float: right;
+            max-width: 870px;
+        }
+    }
+}

@@ -22,36 +22,68 @@
         &.flex{
             display: flex;
             flex-direction: column;
-            div.col-md-4{
-                display: flex;
-                flex: 1;
-                div.thumbnail{
-                    position: relative;
-                    padding: 0;
-                    min-height: 700px;
-                    .caption{
-                        min-height: 33vh;
-                    }
-                    img{
-                        padding-top: 0;
-                        border-top-left-radius: 4px;
-                        border-top-right-radius: 4px;
-                    }
-                    ul + div, h5 + div{
-                        position: absolute;
-                        bottom: 1.0em;
+            div.col-md-4 {
+                @media screen and (min-width: 768px) and (max-width: 1359px) {
+                    width: 45%;
+                }
+                @media screen and (min-width: 1360px)  and (max-width: 1900px) {
+                    width: 33%;
+                }
+                @media screen and (min-width: 1901px) {
+                    width: 25%;
+                }
+            }
+            div.thumbnail{
+                position: relative;
+                padding: 0;
+                .caption{
+                    min-height: 33vh;
+                }
+                img{
+                    padding-top: 0;
+                    border-top-left-radius: 4px;
+                    border-top-right-radius: 4px;
+                }
+                ul + div, h5 + div{
+                    position: absolute;
+                    bottom: 1.0em;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 100%;
+                    p{
                         display: flex;
-                        align-items: center;
+                        flex-wrap: wrap;
                         justify-content: center;
-                        width: 100%;
-                        p{
-                            display: flex;
-                            flex-wrap: wrap;
-                            justify-content: center;
-                            align-items: center;
-                        }
+                        align-items: center;
                     }
                 }
+            }
+        }
+        &.dt-fdr {  
+            @media screen and (min-width: 768px) {
+                flex-direction: row;
+            }
+        }
+        &.dt-fw {
+            @media screen and (min-width: 768px) {
+                flex-wrap: wrap;
+            }
+        }
+        &.aic {
+            align-items: center;
+        }
+        &.jcc {
+            justify-content: center;
+        }
+        div.thumnail {
+            flex: 1;
+            @media screen and (min-width: 768px) {
+                width: 25%;
+                min-height: 400px;
+            }
+            @media screen and (max-width: 767px) {
+                width: 100%;
             }
         }
     }
@@ -65,7 +97,6 @@
                 flex-direction: row;
                 div.col-md-4{
                     display: flex;
-                    flex: 1;
                     div.thumbnail{
                         position: relative;
                         padding: 0;

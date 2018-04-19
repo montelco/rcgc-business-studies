@@ -32,6 +32,109 @@ a {
         }
     }
 }
+.main-content-area {
+    a {
+        &:link{@include constant-links(#0072c6);}
+        &:visited{@include constant-links(#0072c6);}
+        &:hover{@include constant-links(#0072c6);}
+        &:active{@include constant-links(#0072c6);}
+        &.link{color: #0072c6;}
+        .button{
+            @include constant-links(#0072c6);
+            background-color: #0072c6;
+            &:hover{padding:3px;}
+        }
+        .business{
+            @include constant-states(#0072c6);
+        }
+        &.transferlinks{
+            @include constant-states(#0072c6);
+        }
+        .dropdown{
+            @include constant-links(#0072c6);
+            &:visited{@include constant-links(#0072c6);}
+            &:hover{@include constant-links(#0072c6);}
+            &:active{@include constant-links(#0072c6);}
+        }
+        &.business{
+            @include constant-links(#0072c6);
+            &:visited{
+                @include constant-links(#0072c6);
+            }
+            &:active{
+                @include constant-links(#0072c6);
+            }
+        }
+    }
+    aside {
+        @media screen and (min-width: 415px) {
+            float: left;
+            width: 220px;
+            padding-right: 20px;
+        }
+        &.font-fix{
+            .side-bar-box-header {
+                position: relative;
+                background: #EBEDEF;    
+                line-height: 25px;  
+                padding-top: 3px!important;
+                height: 29px;
+                &:after{
+                    color: #EBEDEF; 
+                    height: 25px;
+                    padding-top: 6px;
+                }
+                li {   
+                    border-bottom: none!important;
+                    font-weight: normal;
+                    padding-left: 29px;
+                    a { 
+                        color: #000!important;
+                    }
+                }
+                &:before {
+                    font-family: fontAwesome;
+                    background-color: #90A7C0;
+                    display: block;
+                    content: '\f0c1';
+                    position: absolute;
+                    left: 1px;
+                    top: 0;
+                    padding: 6px 8px 8px 8px;
+                    height: 29px;
+                    color: #EFF1F2;
+                }
+            }
+            ul {
+                width: auto;
+                padding: 0;
+                li {
+                    border-bottom: solid 1px #C8D3E0;
+                    padding: 2px 10px;
+                    opacity: 0.90;
+                    margin: 0 0 5px 0!important;
+                    list-style: none;
+                    font-size: 16px;
+                    a {
+                        color: #29568F;
+                        &:hover {
+                            color: #254150;
+                        }
+                    }
+                    &:hover{
+                        opacity: 1;
+                        font-weight: 350;
+                        position: relative; 
+                        color: #254150;
+                        &:after{
+                            content: none!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
 
 .rcgcheaderbutton {
     @include constant-links(white);

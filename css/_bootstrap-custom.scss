@@ -8,6 +8,10 @@
     }
 }
 
+div#WebPartctl00_ctl36_g_4798d511_9226_4bb9_8b50_a9380d2daef5 div.container-fluid:nth-of-type(even) {
+    background: #d2d2d2;
+}
+
 .btn-default {
     @include text-n-bg($white, $space_cadet);
     min-width: 185px;
