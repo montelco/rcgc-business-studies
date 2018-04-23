@@ -1,0 +1,17 @@
+&.flex{
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -o-flex;
+    display: flex;
+}
+&.jcc{
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+&.aic{
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+}

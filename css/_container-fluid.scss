@@ -15,7 +15,7 @@
         border-color: $pastel_grey;
         margin-bottom: 10px;
     }
-    .container{
+    .container:not(#main-body){
         padding: 30px;
     }
     div.row{

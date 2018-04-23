@@ -1,0 +1,30 @@
+@media screen and (max-width: $tablet - 1){
+    @each $size in $slist {
+        .sm-h\:#{$size}{
+            height: #{$size}px;
+        }
+        .sm-w\:#{$size}{
+            width: #{$size}px;
+        }
+    }
+}
+@media screen and (min-width: $tablet) and (max-width: $desktop - 1){
+    @each $size in $slist {
+        .md-h\:#{$size}{
+            height: #{$size}px;
+        }
+        .md-w\:#{$size}{
+            width: #{$size}px;
+        }
+    }
+}
+@media screen and (min-width: $desktop){
+    @each $size in $slist {
+        .lg-h\:#{$size}{
+            height: #{$size}px;
+        }
+        .lg-w\:#{$size}{
+            width: #{$size}px;
+        }
+    }
+}

@@ -24,6 +24,11 @@ $fab-button: #1C3358;
 $tablet: 768px;
 $desktop: 992px;
 
+// Typography Standards
+$mc_font_size: 13px;
+
+// Elements array
+$slist: 60 80 100 120 160 180 200 240 300 360 400 420 480 500;
 
 @mixin constant-links($color) {
     color: $color;
@@ -32,6 +37,18 @@ $desktop: 992px;
 @mixin text-n-bg($color, $bg) {
     color: $color;
     background-color: $bg;
+}
+@mixin typography($ratio) {
+    font-size: $ratio + em;
+    line-height: 0.6 * $ratio !important;
+    margin-top: round($mc_font_size * ($ratio/5));
+    margin-bottom: round($mc_font_size * ($ratio/2.5));
+    @if $ratio > 1.8 {
+        font-weight: 600;
+    }
+    @else {
+        font-weight: 400;
+    }
 }
 @mixin constant-states($color) {
     @include constant-links($color);
@@ -70,3 +87,4 @@ $desktop: 992px;
 @import 'main-content-area';
 @import 'ribbon';
 @import 'footer';
+@import 'partial-height-width';

@@ -1,0 +1,53 @@
+section.tile{
+    position: relative;
+    &.t\:flex{
+        @media screen and (min-width: $tablet){
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+        }
+    }
+    &.m\:flex{
+        @media screen and (max-width: $tablet - 1){
+            display: -webkit-flex;
+            display: -moz-flex;
+            display: -ms-flex;
+            display: -o-flex;
+            display: flex;
+        }
+    }
+    &.w-full{
+        width: 100%;
+    }
+    .tile-thumbnail{
+        position: relative;
+        height: 100%;
+        overflow: hidden;
+        @import 'partial-flex';
+        img {
+            height: 100%;
+            width: auto;
+            margin: 0 auto;
+        }
+        &.fr{
+            float: right;
+        }
+        &.fl{
+            float: left;
+        }
+        @import 'partial-border-radius-sm';    
+    }
+    .tile-body{
+        flex: 1;
+        border: solid 1px;
+        border-color: #dae1e7;
+        &.pd-sm{
+            padding: 1rem;
+        }
+        @import 'partial-border-radius-sm';
+        @import 'partial-display';
+    }
+    @import 'partial-border-radius-sm';
+}
