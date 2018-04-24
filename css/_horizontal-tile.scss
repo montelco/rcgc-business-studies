@@ -1,5 +1,9 @@
 section.tile{
     position: relative;
+    margin: 2ch 0;
+    &.bxsh {
+        box-shadow: 0em 0.25em 0.75em rgba(0,0,0,0.08);
+    }
     &.t\:flex{
         @media screen and (min-width: $tablet){
             display: -webkit-flex;
@@ -44,7 +48,13 @@ section.tile{
         border: solid 1px;
         border-color: #dae1e7;
         &.pd-sm{
-            padding: 1rem;
+            padding: 1.5rem;
+        }
+        &.bln {
+            border-left: 0px;
+        }
+        &.brn {
+            border-right: 0px;
         }
         @import 'partial-border-radius-sm';
         @import 'partial-display';

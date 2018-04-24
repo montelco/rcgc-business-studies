@@ -26,6 +26,9 @@
     position: relative;
     font-size: 16px;
     padding: 2ch;
+    @media screen and (min-width: $desktop + 180){
+        min-width: 1150px;
+    }
     .main-content {
         @import 'mc-mobile';
         @import 'mc-tablet';

@@ -26,6 +26,9 @@
     small, .small {
         @include typography(0.7);
     }
+    em, .em {
+        font-style: italic;
+    }
     p {
         margin: 0;
         & + h2 {
@@ -34,6 +37,7 @@
     }
     strong {
         font-weight: 600;
-        margin-bottom: 0.75em;
+        padding-bottom: 0.5em;
+        display: inline-block;
     }
 }
