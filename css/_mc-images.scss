@@ -1,10 +1,16 @@
-.page-image {
+.responsive-image {
     position: relative;
     max-width: 100%;
-    margin-bottom: 4ch;
+    &.mb{
+        margin-bottom: 4ch;
+    }
     img {
         width: 100%;
         height: auto;
-        max-height: 500px;
+        @each $size in $slist {
+            &.img-mah\:#{$size}{
+                max-height: #{$size}px;
+            }
+        } 
     }
 }

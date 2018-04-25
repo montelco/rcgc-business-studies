@@ -1,0 +1,8 @@
+$i: 0;
+@while $i < 100 {
+    $i_dec: $i/100;
+    .opc\:#{$i}{
+        opacity: $i_dec;
+    }
+    $i: $i+5;
+}

@@ -29,12 +29,12 @@
     @media screen and (min-width: $desktop + 180){
         min-width: 1150px;
     }
+    @import 'mc-images';
     .main-content {
         @import 'mc-mobile';
         @import 'mc-tablet';
         @import 'mc-desktop';
         @import 'mc-typography';
-        @import 'mc-images';
         @import 'horizontal-tile';
     }
 }
