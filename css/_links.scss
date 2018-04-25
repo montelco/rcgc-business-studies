@@ -87,6 +87,12 @@ a {
             width: 340px;
             padding-right: 20px;
         }
+        &.non-secondary{
+            @media screen and (max-width: $tablet - 1) {
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+        }
         &.font-fix{
             .side-bar-box-header {
                 position: relative;

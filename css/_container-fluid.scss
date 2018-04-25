@@ -1,4 +1,5 @@
 .container-fluid, .container{
+    @import 'mc-images';
     .rcgc-formcontainer {
         background-color:#cbdaef; 
         border-top: #0b1626 solid 40px; 
@@ -23,14 +24,11 @@
             display: flex;
             flex-direction: column;
             div.col-md-4 {
-                @media screen and (max-width: $tablet - 1) {
-                    width: 90%;
+                @media screen and (max-width: $tablet) {
+                    width: 100%;
                 }
-                @media screen and (min-width: $tablet)  and (max-width: $desktop - 1) {
+                @media screen and (min-width: $tablet) {
                     width: 45%;
-                }
-                @media screen and (min-width: $desktop) {
-                    width: 33%;
                 }
             }
             div.thumbnail{
@@ -50,7 +48,7 @@
                     display: flex;
                     align-items: center;
                     justify-content: center;
-                    max-width: 100%;
+                    width: calc(100% - 9px);
                     p{
                         display: flex;
                         flex-wrap: wrap;
