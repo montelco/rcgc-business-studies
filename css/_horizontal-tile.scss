@@ -20,6 +20,9 @@ section.tile{
             display: -ms-flex;
             display: -o-flex;
             display: flex;
+            &.m\:fxdc {
+                flex-direction: column;
+            }
         }
     }
     &.w-full{
@@ -37,11 +40,15 @@ section.tile{
         height: 100%;
         overflow: hidden;
         background: #e6e6e6;
+        // width: initial;
         @import 'partial-flex';
         img {
             height: 100%;
             width: auto;
             margin: 0 auto;
+            &.winit {
+                width: initial;
+            }
         }
         &.fr{
             float: right;
@@ -49,7 +56,7 @@ section.tile{
         &.fl{
             float: left;
         }
-        @import 'partial-border-radius-sm';    
+        @import 'partial-border-radius-sm';   
     }
     .tile-body{
         flex: 1;

@@ -1,4 +1,9 @@
 .container-fluid, .container{
+    &.xl {
+        @media screen and (min-width: $widescreen){
+            width: 1270px;
+        }
+    }
     @import 'mc-images';
     .rcgc-formcontainer {
         background-color:#cbdaef; 

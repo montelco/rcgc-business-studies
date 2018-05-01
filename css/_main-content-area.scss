@@ -29,10 +29,19 @@
     @media screen and (min-width: $desktop + 180){
         min-width: 1150px;
     }
+    @media screen and (min-width: $widescreen){
+        min-width: 1280px;
+    }
+    .widescreen-only {
+        @media screen and (max-width: $widescreen - 1){
+            display: none;
+        }
+    }
     .main-content {
         @import 'mc-mobile';
         @import 'mc-tablet';
         @import 'mc-desktop';
+        @import 'mc-xl-desktop';
         @import 'mc-typography';
         @import 'horizontal-tile';
     }

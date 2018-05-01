@@ -23,9 +23,10 @@ $fab-button: #1C3358;
 // Breakpoints for the various screen sizes. This will dynamically update the imported files.
 $tablet: 768px;
 $desktop: 992px;
-// Optionally, this can be changed for better dynamic sizing and reusable code.
-$widescreen: $desktop + 300;
 
+// Optionally, this can be changed for better dynamic sizing and reusable code.
+$widescreen: $desktop + 308;
+$phone: $tablet - 300;
 // Typography Standards
 $mc_font_size: 13px;
 
