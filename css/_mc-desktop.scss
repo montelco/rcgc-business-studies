@@ -1,6 +1,11 @@
 @media screen and (min-width: $desktop) {
     float: left;
     max-width: 75ch;
-    padding: 0em 2em 0em 2em;
+    padding: 0em 2em 0em 4em;
     font-size: 16px;
+
+    &.wide {
+        max-width: 80ch;
+        padding: 0em 1em 0em 0em;
+    }
 }
