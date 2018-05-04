@@ -93,6 +93,12 @@ a {
                 padding-right: 0 !important;
             }
         }
+        section.wufoo {
+            position: relative;
+            background: #edf0f2;
+            margin: 1vmax 0;
+            padding: 0.5ch;
+        }
         &.font-fix{
             .side-bar-box-header {
                 position: relative;

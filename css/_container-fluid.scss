@@ -28,12 +28,23 @@
         &.flex{
             display: flex;
             flex-direction: column;
+            &.program{
+                div.col-md-4 {
+                    @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
+                        width: 85%;
+                    }
+                    @media screen and (min-width: $desktop) and (max-width: $desktop + 179) {
+                        width: 45%;
+                    }
+                }
+            }
             div.col-md-4 {
                 @media screen and (max-width: $tablet) {
                     width: 100%;
                 }
                 @media screen and (min-width: $tablet) {
                     width: 45%;
+                    max-width: 525px;
                 }
             }
             div.thumbnail{

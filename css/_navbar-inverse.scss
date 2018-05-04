@@ -20,6 +20,8 @@
     }
 
     .navbar-nav{
+        margin: 0px -15px;
+        
         > li > a, a.business{
             color: $white !important;
         }
