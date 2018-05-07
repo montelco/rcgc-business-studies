@@ -26,6 +26,7 @@ $desktop: 992px;
 
 // Optionally, this can be changed for better dynamic sizing and reusable code.
 $widescreen: $desktop + 308;
+$ultrawide: $widescreen + 280;
 $phone: $tablet - 300;
 // Typography Standards
 $mc_font_size: 13px;

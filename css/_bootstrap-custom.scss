@@ -49,6 +49,14 @@ div#WebPartctl00_ctl36_g_4798d511_9226_4bb9_8b50_a9380d2daef5 div.container-flui
             @include text-n-bg($white, $space_cadet);
         }
     }
+    &.apply {
+        border: 0px;
+        min-width: unset;
+        max-width: unset;
+        width: 100%;
+        color: white !important;
+        background: #2B4978;
+    }
 }
 
 .open > .dropdown-toggle.btn-default {

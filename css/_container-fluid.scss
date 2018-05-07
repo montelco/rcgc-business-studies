@@ -33,8 +33,11 @@
                     @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
                         width: 85%;
                     }
-                    @media screen and (min-width: $desktop) and (max-width: $desktop + 179) {
-                        width: 45%;
+                    @media screen and (min-width: $desktop) and (max-width: $desktop + 180) {
+                        width: 80.5%;
+                    }
+                    @media screen and (min-width: $desktop + 180){
+                        width: 67.5%;
                     }
                 }
             }
@@ -43,13 +46,16 @@
                     width: 100%;
                 }
                 @media screen and (min-width: $tablet) {
-                    width: 45%;
-                    max-width: 525px;
+                    width: 50%;
+                    max-width: 465px;
                 }
             }
             div.thumbnail{
                 position: relative;
                 padding: 0;
+                border-radius: 2px;
+                border: 0px;
+                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
                 .caption{
                     margin-bottom: 85px;
                 }
@@ -116,8 +122,8 @@
                         padding: 0;
                         img{
                             padding-top: 0;
-                            border-top-left-radius: 4px;
-                            border-top-right-radius: 4px;
+                            border-top-left-radius: 2px;
+                            border-top-right-radius: 2px;
                         }
                         ul + div, h5 + div{
                             position: absolute;

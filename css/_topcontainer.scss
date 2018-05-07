@@ -2,6 +2,7 @@ div {
     &.rcgc-topcontainer{
         padding-top: 0px;
         padding-bottom: 10px;
+        @import 'mbl-flex';
 
         &.non-semantic-protector { 
           position: relative; z-index: 1; 
@@ -10,16 +11,17 @@ div {
             color: $white;
         }
     }
-    
     &.texture2 {
         background-color: $maastricht_blue;
         background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23334156' fill-opacity='0.03' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
     }
-    
+    &.texture3 {
+        background-color: #ececec !important;
+        background-image: url("data:image/svg+xml,%3Csvg width='40' height='40' viewBox='0 0 40 40' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23dfdfdf' fill-opacity='0.075' fill-rule='evenodd'%3E%3Cpath d='M0 40L40 0H20L0 20M40 40V20L20 40'/%3E%3C/g%3E%3C/svg%3E");
+    }
     &.texture {
         background-image: url("https://www.transparenttextures.com/patterns/white-wave.png");
     }
-
     &.rcgc-transfer {
         padding: 0px; 
         margin-top: -70px; 
@@ -30,7 +32,6 @@ div {
         padding-top: 0px;
         padding-bottom: 0px;
     }
-
     &.rcgc-whitecontainer {
         background-color: white;
         padding-top: 0px;

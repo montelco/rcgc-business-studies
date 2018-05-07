@@ -42,6 +42,7 @@
     .widescreen-only {
         display: none;
     }
+    @import 'mbl-flex';
     .main-content {
         @import 'mc-mobile';
         @import 'mc-tablet';

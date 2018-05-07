@@ -87,17 +87,35 @@ a {
             width: 340px;
             padding-right: 20px;
         }
+
         &.non-secondary{
             @media screen and (max-width: $tablet - 1) {
                 padding-left: 0 !important;
                 padding-right: 0 !important;
             }
         }
+        &.right{
+            // -webkit-box-ordinal-group: 3;
+            // -webkit-order: 2;
+            // -ms-flex-order: 2;
+            // order: 2;
+            @media screen and (min-width: $tablet) and (max-width: $desktop + 179) {
+                float: right;
+                width: 220px;
+                padding-right: 20px;
+            }
+            @media screen and (min-width: $desktop + 180){
+                float: right;
+                width: 340px;
+                padding-right: 20px;
+            }
+        }
         section.wufoo {
             position: relative;
+            border-radius: 2px;
             background: #edf0f2;
-            margin: 1vmax 0;
-            padding: 0.5ch;
+            margin-bottom: 1vmax;
+            padding: 1.25ch;
         }
         &.font-fix{
             .side-bar-box-header {
