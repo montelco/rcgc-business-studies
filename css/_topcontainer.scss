@@ -22,6 +22,9 @@ div {
     &.texture {
         background-image: url("https://www.transparenttextures.com/patterns/white-wave.png");
     }
+    &.t-0125s-ease-all{
+        transition: 0.125s ease all;
+    }
     &.rcgc-transfer {
         padding: 0px; 
         margin-top: -70px; 

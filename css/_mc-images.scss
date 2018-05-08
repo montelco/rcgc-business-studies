@@ -1,6 +1,14 @@
 .responsive-image {
     position: relative;
     max-width: 100%;
+    overflow: hidden;
+    @media screen and (max-width: $tablet - 1) {
+        @each $size in $slist {
+            &.img-mah\:#{$size}{
+                max-height: #{$size}px;
+            }
+        }
+    }
     &.mb{
         margin-bottom: 4ch;
     }
