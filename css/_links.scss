@@ -152,6 +152,10 @@ a {
                     position: absolute;
                     bottom: 0;
                     display: inline-block;
+                    &.head-link {
+                        width: 100%;
+                        text-align: center;
+                    }
                     a { 
                         color: #fff !important;
                         text-transform: uppercase;
@@ -160,6 +164,9 @@ a {
                         text-align: center;
                         word-wrap: break-word;
                         font-weight: 600;
+                        li.head-link > & {
+                            width: 100%;
+                        }
                     }
                 }
                 // &:before {
