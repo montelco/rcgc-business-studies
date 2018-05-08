@@ -24,7 +24,7 @@
     .container:not(#main-body){
         padding: 30px;
     }
-    
+
     div.row{
         &.flex{
             display: flex;
@@ -40,6 +40,12 @@
                     @media screen and (min-width: $desktop + 180) and (max-width: $ultrawide){
                         width: 50%;
                     }
+                }
+            }
+            &.col-md-4-cont-nopd {
+                > div.col-md-4 {
+                    padding-left: 0px;
+                    padding-right: 0px;
                 }
             }
             div.col-md-4 {
@@ -59,7 +65,7 @@
                 border-top: 0px;
                 border-left: 0px;
                 border-bottom: 0.25px solid rgba(0,0,0,0);
-                box-shadow: 0 2px 2px 0 rgba(0,0,0,0.16), 0 0 0 1px rgba(0,0,0,0.08);
+                box-shadow: 0 2px 3px 1px rgba(0,0,0,0.16), 0 0 1px 1px rgba(0,0,0,0.08);
                 .caption{
                     margin-bottom: 85px;
                 }
