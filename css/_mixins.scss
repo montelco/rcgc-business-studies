@@ -1,0 +1,34 @@
+@mixin constant-links($color) {
+    color: $color;
+    text-decoration: none;
+}
+@mixin text-n-bg($color, $bg) {
+    color: $color;
+    background-color: $bg;
+}
+@mixin typography($ratio) {
+    font-size: $ratio + em;
+    line-height: 0.6 * $ratio !important;
+    margin-top: round($mc_font_size * ($ratio/5));
+    margin-bottom: round($mc_font_size * ($ratio/2.5));
+    @if $ratio > 1.8 {
+        font-weight: 600;
+    }
+    @else {
+        font-weight: 400;
+    }
+}
+@mixin constant-states($color) {
+    @include constant-links($color);
+    &:visited{@include constant-links($color);}
+    &:hover{@include constant-links($color);}
+    &:active{@include constant-links($color);}
+}
+@mixin wid-pos-pad() {
+    width:100%;
+    position:relative;
+    padding:0;
+}
+@mixin lin-grad($start, $end, $direction:"") {
+    background: linear-gradient(unquote($direction), $start, $end);
+}
