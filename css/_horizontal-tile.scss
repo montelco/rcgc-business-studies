@@ -39,6 +39,10 @@ section.tile{
     .tile-thumbnail{
         position: relative;
         height: 100%;
+        @media screen and (max-width: $tablet - 1) {
+            width: 100%;
+            min-height: 65px;
+        }
         overflow: hidden;
         background: #e6e6e6;
         // width: initial;

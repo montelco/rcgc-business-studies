@@ -8,6 +8,16 @@
         }
     }
 }
+@media screen and (max-width: $tablet - 1){
+    @each $size in $slist {
+        .sm-mah\:#{$size}{
+            height: #{$size}px;
+        }
+        .sm-maw\:#{$size}{
+            width: #{$size}px;
+        }
+    }
+}
 @media screen and (min-width: $tablet) and (max-width: $desktop - 1){
     @each $size in $slist {
         .md-h\:#{$size}{
