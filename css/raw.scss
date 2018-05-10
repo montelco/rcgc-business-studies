@@ -2,24 +2,30 @@
 @import 'variables';
 @import 'mixins';
 @import 'global';
+// Browser fixes
 @import 'viewport-ie10';
-@import 'links';
+// Template exteriors
+@import 'ribbon';
+@import 'footer';
+// Most Pages
 @import 'fab';
 @import 'navbar-inverse';
 @import 'logo';
 @import 'm_hamburger';
 @import 'search';
+// Types of Layouts
+@import 'links';
 @import 'main';
+@import 'main-content-area';
+@import 'partials';
+@import 'program-info';
+// Stuff from the web of 2011
 @import 'slick';
-@import 'slick-theme';
-@import 'subpage-image';
 @import 'slider-caption';
 @import 'slider-container';
+@import 'slick-theme';
+@import 'subpage-image';
+// Bootstrap override slimes
 @import 'topcontainer';
 @import 'bootstrap-custom';
-@import 'program-info';
 @import 'container-fluid';
-@import 'main-content-area';
-@import 'ribbon';
-@import 'footer';
-@import 'partials';
