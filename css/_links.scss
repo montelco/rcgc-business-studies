@@ -32,7 +32,7 @@ a {
         }
     }
 }
-.main-content-area, .container-fluid{
+.main-content-area, .container-fluid.texture1, .container-fluid.texture2{
     h2{
         a{
             &.lite {
@@ -226,11 +226,14 @@ a {
     cursor: pointer;
 }
 
-#programlist {
-    &:link{@include constant-links(white);}
-    &:visited{@include constant-links(white);}
-    &:hover{@include constant-links($harvest_gold);}
-    &:active{@include constant-links(white);}
+#programlist h4{
+    a{
+        @include constant-links(white);
+        &:link{@include constant-links(white);}
+        &:visited{@include constant-links(white);}
+        &:hover{@include constant-links($harvest_gold);}
+        &:active{@include constant-links(white);}
+    }
 }
 
 .button5 {
