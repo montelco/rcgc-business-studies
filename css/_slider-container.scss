@@ -1,7 +1,7 @@
 .tp-banner-container{
     @include wid-pos-pad();
     @media screen and (max-width: 942px){
-        padding-top: 105px !important;
+        padding-top: -2px !important;
     }
 }
 
