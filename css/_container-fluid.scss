@@ -26,7 +26,7 @@
     }
 
     div.row{
-        &.flex{
+        &.flex, div.ms-WPBody>div{
             display: flex;
             flex-direction: column;
             &.program{
@@ -42,7 +42,7 @@
                     }
                 }
             }
-            &.col-md-4-cont-nopd {
+            &.col-md-4-cont-nopd , div.ms-WPBody>div{
                 > div.col-md-4 {
                     @media screen and (max-width: $desktop - 1) {
                         padding-left: 0px;
@@ -93,20 +93,20 @@
                 }
             }
         }
-        &.dt-fdr {  
+        &.dt-fdr, div.ms-WPBody>div {  
             @media screen and (min-width: $tablet) {
                 flex-direction: row;
             }
         }
-        &.dt-fw {
+        &.dt-fw, div.ms-WPBody>div {
             @media screen and (min-width: $tablet) {
                 flex-wrap: wrap;
             }
         }
-        &.aic {
+        &.aic{
             align-items: center;
         }
-        &.jcc {
+        &.jcc, div.ms-WPBody>div {
             justify-content: center;
         }
         div.thumnail {
@@ -125,7 +125,7 @@
 @media screen and (min-width: $tablet){
     .container-fluid, .container{
         div.row{
-            &.flex{
+            &.flex, div.ms-WPBody>div{
                 display: flex !important;
                 flex-direction: row;
                 div.col-md-4{
