@@ -226,6 +226,13 @@ a {
     cursor: pointer;
 }
 
+#programlist {
+    &:link{@include constant-links(white);}
+    &:visited{@include constant-links(white);}
+    &:hover{@include constant-links($harvest_gold);}
+    &:active{@include constant-links(white);}
+}
+
 .button5 {
     background-color: $eerie_black;
     color: black;
