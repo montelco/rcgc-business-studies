@@ -182,7 +182,13 @@ a {
                 //     color: #EFF1F2;
                 // }
             }
-            ul {
+            div#bizNav ul.ms-core-listMenu-root > li > a{
+                color: pink !important;
+                display: block;
+                background: #000;
+                border: 1px solid green;
+            }
+            ul, ul.ms-core-listMenu-root {
                 width: auto;
                 padding: 0;
                 li:not(.head-link) {
@@ -210,6 +216,7 @@ a {
                         }
                     }
                 }
+                & > li.static {padding: 0px;}
             }
         }
     }
