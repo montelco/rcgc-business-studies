@@ -1,6 +1,9 @@
 #main-body{
   div.ms-WPBody > div {
     display: flex;
+  }
+  .ms-core-listMenu-verticalBox li.static > ul.static > li.static > .ms-core-listMenu-item{
+    padding: 0.25ch 1ch;
   }   
 }
 
