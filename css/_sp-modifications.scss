@@ -9,3 +9,13 @@
     width: 100vw;
   }
 }
+
+#s4-workspace {
+  overflow: unset;
+  nav.navbar-inverse {
+    position: -webkit-sticky;
+    button {
+      min-width: unset;
+    }
+  }
+}
