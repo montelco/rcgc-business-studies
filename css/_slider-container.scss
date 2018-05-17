@@ -1,12 +1,16 @@
 .tp-banner-container{
     @include wid-pos-pad();
-    @media screen and (max-width: 942px){
+    z-index: 10;
+    @media screen and (max-width: $desktop){
         padding-top: -2px !important;
     }
 }
 
 .tp-banner{
     @include wid-pos-pad();
+    @media screen and (min-width: $tablet) {
+      max-height: 500px;
+    }
 }
 
 .tp-banner-fullscreen-container {
