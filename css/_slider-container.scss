@@ -8,9 +8,9 @@
 
 .tp-banner{
     @include wid-pos-pad();
-    @media screen and (min-width: $tablet) {
-      max-height: 500px;
-    }
+    // @media screen and (min-width: $tablet) {
+    //   max-height: 500px !important;
+    // }
 }
 
 .tp-banner-fullscreen-container {
