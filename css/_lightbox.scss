@@ -1,0 +1,63 @@
+.lightbox {
+  background-color: rgba(0,0,0,.85);  
+  overflow: hidden;
+  position: fixed;
+  display: none;
+  z-index: 100000000000000000;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  top: 0;
+  align-items: center;
+  justify-content: center;
+  
+  .lightbox-container {
+    flex: 1;
+    position: relative;
+    max-width: 960px;
+    display: block;    
+    height: auto;
+    z-index: 10;
+  }
+    
+  .lightbox-content {
+    box-shadow: 0 1px 6px fade(black, 70%);
+  }
+  
+  .lightbox-close {
+    text-transform: uppercase;    
+    background: transparent;
+    position: absolute; 
+    font-weight: 300;      
+    font-size: 12px;
+    display: block;
+    border: none;
+    color: white;
+    top: -22px;
+    right: 3%;
+  }
+
+  .video-container {  
+    position: relative;  
+    overflow: scroll;
+    max-height: 2000px;
+    background: #edf0f2;
+    padding: 1.25ch; 
+    section.wufoo {
+      padding: 1ch;
+      min-height: 500px;
+      h2 + div {height: 100%;}
+      .wufoo-form-container {height: 100%;}
+    }
+  }
+
+  .video-container iframe,
+  .video-container object,
+  .video-container embed {
+    position: absolute;
+    height: 100%;  
+    width: 100%;  
+    left: 0;  
+    top: 0;
+  }
+}

@@ -76,7 +76,7 @@ a {
             }
         }
     }
-    aside {
+    aside, #id01{
         @media screen and (min-width: $tablet) and (max-width: $desktop + 179) {
             float: left;
             width: 220px;
@@ -123,7 +123,7 @@ a {
                 padding-right: 20px;
             }
         }
-        section.wufoo {
+        section.wufoo, .lightbox-content .video-container .wufoo{
             position: relative;
             border-radius: 2px;
             background: #edf0f2;
