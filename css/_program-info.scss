@@ -22,6 +22,9 @@ section#header-img-container{
             top: 25%;
             bottom: 60px;
             max-width: 25vmax;
+            @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+                max-width: calc(25 * (1vw + 1vh - 1vmin));
+            }
             min-height: 260px;
             padding: 2rem;
             box-shadow: -0.25rem 0.25rem 0.75em rgba(0,0,0,0.16);
