@@ -24,7 +24,8 @@
     .container:not(#main-body){
         padding: 30px;
     }
-
+    @import 'partial-flex-ie-thumbnail-fix';
+    
     div.row{
         &.flex, div.ms-WPBody>div{
             display: -webkit-box;

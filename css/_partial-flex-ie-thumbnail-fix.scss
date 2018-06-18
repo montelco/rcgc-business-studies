@@ -1,0 +1,13 @@
+@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+  div.row{
+    &.flex, div.ms-WPBody{
+      max-width: 1170px !important;
+       > div div.col-md-4{
+       display: block !important;
+       width: 50%;
+       max-width: 465px !important;
+       min-width: 300px !important;
+      }
+    }
+  }
+}
