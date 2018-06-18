@@ -27,8 +27,16 @@
 
     div.row{
         &.flex, div.ms-WPBody>div{
+            display: -webkit-box;
+            display: -webkit-flex;
+            display: -ms-flexbox;
             display: flex;
+            -webkit-box-orient: vertical;
+            -webkit-box-direction: normal;
+            -webkit-flex-direction: column;
+            -ms-flex-direction: column;
             flex-direction: column;
+            
             &.program{
                 div.col-md-4 {
                     @media screen and (min-width: $tablet) and (max-width: $desktop - 1) {
@@ -80,33 +88,66 @@
                 .action_buttons{
                     position: absolute;
                     bottom: 1.0em;
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
                     display: flex;
+                    -webkit-box-align: center;
+                    -webkit-align-items: center;
+                    -ms-flex-align: center;
                     align-items: center;
-                    justify-content: center;
+                    -webkit-box-pack: center;
+                    -webkit-justify-content: center;
+                    -ms-flex-pack: center;
+                    justify-content: center;  
                     width: calc(100% - 9px);
                     p{
+                        display: -webkit-box;
+                        display: -webkit-flex;
+                        display: -ms-flexbox;
                         display: flex;
+                        -webkit-flex-wrap: wrap;
+                        -ms-flex-wrap: wrap;
                         flex-wrap: wrap;
-                        justify-content: center;
+                        -webkit-box-align: center;
+                        -webkit-align-items: center;
+                        -ms-flex-align: center;
                         align-items: center;
+                        -webkit-box-pack: center;
+                        -webkit-justify-content: center;
+                        -ms-flex-pack: center;
+                        justify-content: center;
                     }
                 }
             }
         }
         &.dt-fdr, div.ms-WPBody>div {  
             @media screen and (min-width: $tablet) {
-                flex-direction: row;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
+                flex-direction: row; 
             }
         }
         &.dt-fw, div.ms-WPBody>div {
             @media screen and (min-width: $tablet) {
+                -webkit-flex-wrap: wrap;
+                -ms-flex-wrap: wrap;
                 flex-wrap: wrap;
             }
         }
         &.aic{
+            -webkit-box-align: center;
+            -webkit-align-items: center;
+            -ms-flex-align: center;
             align-items: center;
         }
         &.jcc, div.ms-WPBody>div {
+            // All in fallback
+            -webkit-box-pack: center;
+            -webkit-justify-content: center;
+            -ms-flex-pack: center;
             justify-content: center;
         }
         div.thumnail {
@@ -126,9 +167,19 @@
     .container-fluid, .container{
         div.row{
             &.flex, div.ms-WPBody>div{
+                display: -webkit-box !important;
+                display: -webkit-flex !important;
+                display: -ms-flexbox !important;
                 display: flex !important;
+                -webkit-box-orient: horizontal;
+                -webkit-box-direction: normal;
+                -webkit-flex-direction: row;
+                -ms-flex-direction: row;
                 flex-direction: row;
                 div.col-md-4{
+                    display: -webkit-box;
+                    display: -webkit-flex;
+                    display: -ms-flexbox;
                     display: flex;
                     div.thumbnail{
                         position: relative;
