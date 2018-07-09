@@ -20,6 +20,7 @@
     }
 }
 
+@import 'horizontal-tile';
 
 .main-content-area {
     float: left;
@@ -43,7 +44,7 @@
         display: none;
     }
     @import 'mbl-flex';
-    .main-content {
+    .main-content, .grey-content{
         @import 'mc-mobile';
         @import 'mc-tablet';
         @import 'mc-desktop';
